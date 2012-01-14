@@ -7,7 +7,7 @@ public class Cliente {
 	
 	public void setNome(String nome) throws DadosIncorretosClienteException{
 		if(nome.equals("") || nome == null){
-			throw new DadosIncorretosClienteException("O nome n�o pode ser vazio!");
+			throw new DadosIncorretosClienteException("O nome não pode ser vazio!");
 		}else{
 			this.nome = nome;
 		}		
@@ -19,7 +19,7 @@ public class Cliente {
 	
 	public void setEndereco(String endereco) throws DadosIncorretosClienteException{
 		if(endereco.equals("") || endereco == null){
-			throw new DadosIncorretosClienteException("O endere�o n�o pode ser vazio!");
+			throw new DadosIncorretosClienteException("O endereço não pode ser vazio!");
 		}else{
 			this.endereco = endereco;
 		}		
