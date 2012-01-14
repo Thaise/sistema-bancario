@@ -31,7 +31,7 @@ public class Cliente {
 	
 	public void setTelefone(String telefone) throws DadosIncorretosClienteException{
 		if(telefone.equals("") || telefone.length() > 10 || telefone.length() < 10){
-			throw new DadosIncorretosClienteException("O telefone deve conter 10 digitos e n�o pode ser vazio!");
+			throw new DadosIncorretosClienteException("O telefone deve conter 10 digitos e não pode ser vazio!");
 		}else{
 			this.telefone = telefone;	
 		}
