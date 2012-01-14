@@ -1,14 +1,13 @@
-
 public class Cliente {
 
 	private String nome;
 	private String endereco;
-	String telefone;
+	private String telefone;
 	private String cpf;
 	
 	public void setNome(String nome) throws DadosIncorretosClienteException{
 		if(nome.equals("") || nome == null){
-			throw new DadosIncorretosClienteException("O nome não pode ser vazio!");
+			throw new DadosIncorretosClienteException("O nome nï¿½o pode ser vazio!");
 		}else{
 			this.nome = nome;
 		}		
@@ -20,7 +19,7 @@ public class Cliente {
 	
 	public void setEndereco(String endereco) throws DadosIncorretosClienteException{
 		if(endereco.equals("") || endereco == null){
-			throw new DadosIncorretosClienteException("O endereço não pode ser vazio!");
+			throw new DadosIncorretosClienteException("O endereï¿½o nï¿½o pode ser vazio!");
 		}else{
 			this.endereco = endereco;
 		}		
@@ -32,7 +31,7 @@ public class Cliente {
 	
 	public void setTelefone(String telefone) throws DadosIncorretosClienteException{
 		if(telefone.equals("") || telefone.length() > 10 || telefone.length() < 10){
-			throw new DadosIncorretosClienteException("O telefone deve conter 10 digitos e não pode ser vazio!");
+			throw new DadosIncorretosClienteException("O telefone deve conter 10 digitos e nï¿½o pode ser vazio!");
 		}else{
 			this.telefone = telefone;	
 		}
@@ -44,7 +43,7 @@ public class Cliente {
 	
 	public void setCpf(String cpf) throws DadosIncorretosClienteException{
 		if(cpf == null || cpf == "" || cpf.length() > 11 || cpf.toString().length() < 10){
-			throw new DadosIncorretosClienteException("O CPF deve conter 11 digitos e não pode ser vazio!");
+			throw new DadosIncorretosClienteException("O CPF deve conter 11 digitos e nï¿½o pode ser vazio!");
 		}else{
 			this.cpf = cpf;	
 		}
