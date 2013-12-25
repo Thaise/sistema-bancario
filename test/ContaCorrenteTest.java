@@ -13,6 +13,7 @@ public class ContaCorrenteTest{
 		assertEquals(900, cc.getSaldo(),0);
 	}
 	
+	//Teste mudança não atualizada
 	@Test
 	public void deveAtualizarSaldoAposDepositar() throws SaldoInsuficienteException, ValorInvalidoException{
 		ContaCorrente cc = new ContaCorrente();
