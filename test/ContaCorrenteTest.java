@@ -4,6 +4,7 @@ import org.junit.Test;
 
 public class ContaCorrenteTest{
 
+	//Teste repositório remoto
 	@Test
 	public void deveAtualizarSaldoAposSaque() throws SaldoInsuficienteException, ValorInvalidoException{
 		ContaCorrente cc = new ContaCorrente();
